@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang='zxx'>
+	<head>
+        <title>Новостной сайт "Узнайко"</title>
+        <meta charset='utf-8' />
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a>
+                        <li><a href="#hotNews">Новость часа</a>
+                        <li><a href="#topNews">Главные новости</a>
+                        <li><a href="#newsToday">Новости за сегодня</a>
+                        <li><a href="#newsOnWeek">Новости за неделю</a>
+                        <li><a href="#comments">Комментарии экспертов</a>
+                        <li><a href="#contacts">Контакты</a>
+                        <li><a href="#about">О нас</a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="banner">
+            <div class="container">
+                <h1>Новостной сайт "Узнайко"</h1>
+                <p class="paragraph">Новости со всего света</p>
+
+                <blockquote>Кто владеет информацией, тот владеет миром.&copy;Кто-то известный</blockquote>
+                <a href="archive.zip" class="btn download">Архив новостей</a>
+            </div>
+        </div>
+        <div class="hotNews">
+            <h2>Новость часа</h2>
+            <p class="paragraph">Пингвин съел тигра</p>
+            <img src="img/pingvin.png" alt="Пингвин" >
+        </div>
+        <div id="topNews">
+            <div class="container">
+                <h2>Главные новости</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="col">
+                                <h3>Новость 1</h3>
+                                <p class="paragraph">Текст новости, бла-бла-бла</p>
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="col">
+                                <h3>Новость 2</h3>
+                                <p class="paragraph">Текст новости, бла-бла-бла</p>
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="col">
+                                <h3>Новость 3</h3>
+                                <p class="paragraph">Текст новости, бла-бла-бла</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="newsToday">
+            <div class='container'>
+                <!--Оборачиваем, чтобы потом управлять-->
+                <h2>Новости за сегодня</h2>
+                    <div class="cols">
+                            <div class="col">
+                                <h3>Новость 4</h3>
+                                <p class="paragraph">Текст новости, бла-бла-бла</p>
+                            </div>
+                        
+                            <div class="col">
+                                <h3>Новость 5</h3>
+                                <p class="paragraph">Текст новости, бла-бла-бла</p>
+                            </div>
+
+                            <div class="col">
+                                <h3>Новость 6</h3>
+                                <p class="paragraph">Текст новости, бла-бла-бла</p>
+                            </div>
+                    
+                    </div>
+            </div>
+        </div>
+        <div id="newsOnWeek">
+            <div class='container'>
+            <h2>Новости за неделю</h2>
+            <!--Оборачиваем, чтобы потом управлять-->
+                <div class="items">
+                    <div class="item">
+                        <h3>Новость 7</h3>
+                        <p class="paragraph">Текст новости, бла-бла-бла</p>
+                    </div>
+                    
+                    <div class="item">
+                        <h3>Новость 8</h3>
+                        <p class="paragraph">Текст новости, бла-бла-бла</p>
+                    </div>
+                    
+                    <div class="item">
+                        <h3>Новость 9</h3>
+                        <p class="paragraph">Текст новости, бла-бла-бла</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="comments">
+            <h2>Комментарии экспертов</h2>
+            <p>Мнение эксперта 1</p>
+        </div>
+        <div id="contacts">
+            <h2>Контакты</h2>
+            <div class="Test">
+                <address>
+                    <p>г. Москва, Останкино</p>
+                    <a href="mailto:1t@mail.ru">1t@mail.ru</a>
+                    <br />
+                    <p><a href="tel:+7(916)8437494">+7 (916) 843-74-94</a></p>
+                    <h3>Сообщить новость</h3>
+
+
+                    <!--
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/YZAVxBivM-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        -->
+                </address>
+            
+                <iframe src="https://api-maps.yandex.ru/frame/v1/-/CVh7YBYg?" width="400" height="300" frameborder="0"></iframe>
+
+                <div class="form">
+                <form>       
+                    <div class="row">
+                        <label>Ваше имя</label>
+                        <input type="text" name="name" />
+                    </div>
+                                                                                   
+                    <div class="row">
+                         <label>Ваш e-mail</label>
+                        <input type="email" name="e-mail" />
+                     </div>
+                                                                                    
+                    <div class="row">
+                        <label>Тема новости</label>
+                         <input type="text" name="subject" />
+                     </div>
+                            
+                    <div class="row">
+                        <label>Текст новости</label>
+                        <textarea name="msg"></textarea>
+                    </div>
+                    
+                    <div class="row">
+                        <label>Согласны на обработку персональных данных</label>
+                        <input type="checkbox" name="rules" value="1" required />
+                    </div>
+                            
+                    <div class="row">
+                        <input type="submit" name="Отправить" />
+                    </div>
+
+                 </form>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                © Новостной сайт "Узнайко". Соблюдайте авторские права.
+                <a href="index.html" target="_blank">Сделано Ю. Меляшовым</a>
+            </div>
+        </footer>
+    </body>
+</html>

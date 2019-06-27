@@ -1,0 +1,106 @@
+h1, h2,h3 {
+    text-align: center;
+}
+
+table {
+    border: 2px solid green;
+    display: table;
+    margin: auto;
+    text-align: center
+}
+
+div#newsToday {
+    text-align: center;
+}
+
+* {
+    font-family: 'Caveat', cursive;
+}
+
+/*верхнее меню*/
+header ul{
+  list-style-type: none; /*убираем маркеры у пунктов меню*/
+}
+header li{
+  display: inline-block; /*делаем пункты меню строчно-блочными, чтобы выстроились в строчку*/
+}
+
+/* общий макет */
+nav a{
+    padding: 5px 10px; /*Делаем отступы между пунктами меню*/
+}
+
+.container{
+    width: 992px; /*задаем ширину контейнера*/
+    margin: auto; /*задаем внешние отступы автоматической ширины*/
+}
+
+nav {
+    text-align: right; /*выравнивание всего меню по правому краю*/
+}
+
+nav ul{
+    display: inline-block;
+}
+
+header, #banner{
+    margin: 0; /*Делаем внешние отступы по нулям, чтобы фон прилегал к краям страницы*/
+}
+
+#banner {
+    margin-top: -18px;
+}
+
+.download{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px #000;
+    display: block;
+    width: 140px;
+    margin: auto;
+}
+
+/*колонки diplay:table, т.е. делаем их в виде таблицы*/
+#newsToday .cols{
+    display: table;
+    border: 2px solid red;
+}
+
+/*На 10% смотрится нормально, почему*/
+#newsToday .col{
+    display: table-cell;/*делаем их в виде ячейки таблицы*/
+    width: 33%;
+    border: 2px solid blue;
+}
+
+/*колонки inline:block, т.е. делаем их блочно-строчными*/
+#newsOnWeek .items {
+    font-size: 0;/*Т.к. между элементами div пробелы, которые считаются как 1 символ, то мы делаем размер шрифта этого символа 0, чтобы у нас все элементы влезли*/
+    text-align: center; /*выравниваем по центру, даже если будет 5 элементов, то все равно встанут красиво*/
+}
+
+#newsOnWeek .item {
+    vertical-align: top;
+    font-size: 1rem; /*возвращаем размер шрифта*/
+    width: 33%;/*делим 100% на количество элементов*/
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/*делаем ширину параграфа такую же, как у картинки, сначала смотрим ширину картинки*/
+#newsOnWeek .item p{
+    width: 230px;
+    margin: auto;
+    text-align: justify; /*выравнивание по ширине*/
+}
+
+#contacts iframe{
+    display: block;
+    margin: auto;
+}
+
+#contacts .Test{
+    display: block;
+    margin: auto;
+}
